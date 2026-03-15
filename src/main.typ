@@ -344,8 +344,8 @@
 
   counter(page).update(1)
 
-  show: body => configure_headings(blue, body)
-  show: body => configure_figures()
-  show: body => configure_tables()
+  show: body => configure_headings(default_heading_color, body)
+  show: body => configure_figures(body)
+  show: body => configure_tables(body)
   body
 }
